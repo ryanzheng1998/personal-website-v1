@@ -19,6 +19,9 @@ const StyledSVGs = styled.div`
     width: 100px;
     height: auto;
     cursor: pointer;
+    @media(max-width: 767px) {
+      width: 60px; 
+    }
   };
 
   a {
@@ -30,6 +33,8 @@ const StyledSVGs = styled.div`
     margin: 0;
     text-align: center;
   }
+
+
 `
 
 
@@ -41,7 +46,7 @@ const IndexPage = () => (
     <StyledSVGs>
       <a target="_blank" rel="noopener noreferrer" href="https://github.com/ryanzheng1998"><img src="/logo-github.svg" alt="github logo"/><p>Github</p></a>
       <a target="_blank" rel="noopener noreferrer" href="https://codepen.io/ryanzheng"><img src="/logo-codepen.svg" alt="codepen logo"/><p>Codepen</p></a>
-      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sheng-xuan-zheng/"><img src="/logo-linkedin.svg" alt="linkedin logo"/><p>Linkin</p></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/sheng-xuan-zheng/"><img src="/logo-linkedin.svg" alt="linkedin logo"/><p>Linkedin</p></a>
       <a target="_blank" rel="noopener noreferrer" href="mailto:ryan.zheng.1998@gmail.com"><img src="/mail-outline.svg" alt="mail logo"/><p>Email</p></a>
     </StyledSVGs>
   </ChineseLayout>
