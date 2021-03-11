@@ -1,8 +1,8 @@
-import Layout from '../components/Layout'
+import ChineseLayout from '../../components/ChineseLayout'
 
 const ProjectsPage = () => (
-  <Layout title="Ryan Zheng">
-  </Layout>
+  <ChineseLayout title="Ryan Zheng">
+  </ChineseLayout>
 )
 
 export default ProjectsPage

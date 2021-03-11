@@ -1,6 +1,6 @@
-import React, { ReactNode, useState } from 'react'
+import React from 'react'
 
-import Nav from './Nav'
+import ChineseNav from './ChineseNav'
 import Footer from './Footer'
 import MetaData from './MetaData'
 import styled from 'styled-components'
@@ -15,22 +15,19 @@ const StyledPageContainer = styled.div`
   }
 `
 
-
 interface Props {
-  children?: ReactNode;
+  children?: React.ReactNode;
   title: string;
 }
 
-const Layout = ({ children, title }: Props) => {
-  
-  return (
+const ChineseLayout = ({ children, title }: Props) => (
     <StyledPageContainer>
-      <MetaData title={title} />
-      <Nav/>
-      {children}
-      <Footer />
+        <MetaData title={title} />
+        <ChineseNav />
+        {children}
+        <Footer />
     </StyledPageContainer>
-  )
-}
+)
 
-export default Layout
+
+export default ChineseLayout

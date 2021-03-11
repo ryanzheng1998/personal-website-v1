@@ -3,7 +3,11 @@ module.exports = {
         return [
             {
                 source: '/english/:path',
-                destination: '/:path'
+                destination: '/:path',
+            },
+            {
+                source: '/english',
+                destination: '/',
             }
         ];
     }

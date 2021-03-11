@@ -32,6 +32,7 @@ const StyledLogo = styled.h1`
 `
 
 const LanguageDiv = styled.div`
+    justify-self: end;
     img {
         width: 25px;
         height: auto;
@@ -39,16 +40,15 @@ const LanguageDiv = styled.div`
     }
 `
 
-
-const Nav: React.FC = () => (
+const ChineseNav: React.FC = () => (
     <StyledHeader>
         <StyledNav>
-            <StyledLogo>Ryan Zheng</StyledLogo>
-            <Link href='/'>Home</Link>
-            <Link href='/projects'>Projects</Link>
-            <Link href='/chinese'><LanguageDiv><img src='/language-outline.svg' alt='選擇語言'/></LanguageDiv></Link>
+            <StyledLogo><Link href='/chinese'>Ryan Zheng</Link></StyledLogo>
+            <Link href='/chinese'>主頁</Link>
+            <Link href='/chinese/projects'>專案</Link>
+            <Link href='/english'><LanguageDiv><img src='/language-outline.svg' alt='Change Language'/></LanguageDiv></Link>
         </StyledNav>
     </StyledHeader>
 )
 
-export default Nav
+export default ChineseNav
