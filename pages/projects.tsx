@@ -1,8 +1,8 @@
 import Layout from '../components/Layout'
 
-const IndexPage = () => (
+const ProjectsPage = () => (
   <Layout title="Ryan Zheng">
   </Layout>
 )
 
-export default IndexPage
+export default ProjectsPage
